@@ -1,0 +1,5 @@
+@use 'helpers' as *;
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+}
