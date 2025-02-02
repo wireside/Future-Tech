@@ -1,0 +1,34 @@
+@use '../helpers' as *;
+
+.footer {
+  color: var(--color-dark-40);
+
+  &__body {
+    padding-bottom: fluid(80, 40);
+    border-bottom: var(--border);
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    column-gap: fluid(80, 20);
+
+    &-column {
+      display: grid;
+      row-gap: fluid(36, 16);
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: fluid(18, 8);
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: rem(8);
+    }
+  }
+}
