@@ -30,5 +30,15 @@
       align-items: center;
       column-gap: rem(8);
     }
+
+    &-link.button {
+      font-size: rem(18);
+      padding: rem(10) rem(16);
+
+      @include laptop {
+        font-size: rem(14);
+        padding: rem(8) rem(14);
+      }
+    }
   }
 }

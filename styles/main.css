@@ -677,5 +677,15 @@ button[aria-label]::before {
   align-items: center;
   column-gap: 0.5rem;
 }
+.footer__menu-link.button {
+  font-size: 1.125rem;
+  padding: 0.625rem 1rem;
+}
+@media (width <= 90.06125rem) {
+  .footer__menu-link.button {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.875rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
