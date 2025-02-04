@@ -22,14 +22,11 @@
   }
   
   &__value {
+    font-family: var(--font-family-base);
     font-weight: 600;
   }
   
   &__sign {
-    @include fluid-text(40, 24);
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    
     color: var(--color-accent);
   }
 }

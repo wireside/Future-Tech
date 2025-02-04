@@ -781,12 +781,10 @@ button[aria-label]::before {
   border-right: var(--border);
 }
 .metrics__value {
+  font-family: var(--font-family-base);
   font-weight: 600;
 }
 .metrics__sign {
-  font-size: clamp(1.5rem, 1.2450980392rem + 1.045751634vw, 2.5rem);
-  font-weight: 600;
-  letter-spacing: -0.03em;
   color: var(--color-accent);
 }
 
@@ -818,6 +816,34 @@ button[aria-label]::before {
 .resources-preview__body {
   display: grid;
   row-gap: 0.875rem;
+}
+
+.advantage-card {
+  display: grid;
+  row-gap: 1.875rem;
+}
+.advantage-card__link {
+  --circleSize: 3.25rem;
+  --circleMarginLeft: 1.25rem;
+  position: relative;
+  display: grid;
+  row-gap: 0.25rem;
+  padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+}
+.advantage-card__link::after {
+  width: var(--circleSize);
+  height: var(--circleSize);
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  content: "";
+  right: 0;
+  background: url("../../icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
+  border-radius: 50%;
+}
+.advantage-card__details {
+  font-size: clamp(0.875rem, 0.7794117647rem + 0.3921568627vw, 1.25rem);
+  font-family: var(--font-family-accent);
 }
 
 .hero__main {
@@ -852,6 +878,21 @@ button[aria-label]::before {
   padding-bottom: 5rem;
   border-left: var(--border);
   background: url("../../images/resources-preview/bg.png") 0 0/cover no-repeat;
+}
+.hero__advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.hero__advantages-item {
+  --paddingX: 5rem;
+  padding-block: 3.125rem;
+}
+.hero__advantages-item:not(:first-child) {
+  padding-left: var(--paddingX);
+}
+.hero__advantages-item:not(:last-child) {
+  padding-right: var(--paddingX);
+  border-right: var(--border);
 }
 
 /*# sourceMappingURL=main.css.map */
