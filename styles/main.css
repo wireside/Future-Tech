@@ -702,7 +702,7 @@ button[aria-label]::before {
   color: var(--color-dark-40);
 }
 .footer__body {
-  padding-bottom: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
+  padding-block: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
   border-bottom: var(--border);
 }
 .footer__menu {
