@@ -26,6 +26,10 @@
     }
   }
   
+  &__title {
+    font-family: var(--font-family-base);
+  }
+  
   &__details {
     @include fluid-text(20, 14);
     

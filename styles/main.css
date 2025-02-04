@@ -841,6 +841,9 @@ button[aria-label]::before {
   background: url("../../icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
   border-radius: 50%;
 }
+.advantage-card__title {
+  font-family: var(--font-family-base);
+}
 .advantage-card__details {
   font-size: clamp(0.875rem, 0.7794117647rem + 0.3921568627vw, 1.25rem);
   font-family: var(--font-family-accent);
@@ -871,6 +874,7 @@ button[aria-label]::before {
 }
 .hero__metrics {
   grid-area: metrics;
+  border-top: var(--border);
 }
 .hero__resources-preview {
   grid-area: resources-preview;
@@ -878,6 +882,9 @@ button[aria-label]::before {
   padding-bottom: 5rem;
   border-left: var(--border);
   background: url("../../images/resources-preview/bg.png") 0 0/cover no-repeat;
+}
+.hero__advantages {
+  border-block: var(--border);
 }
 .hero__advantages-list {
   display: grid;
