@@ -948,9 +948,6 @@ button[aria-label]::before {
   font-family: var(--font-family-accent);
 }
 
-.hero__main {
-  margin-bottom: 6.25rem;
-}
 @media (width > 63.99875rem) {
   .hero__main {
     display: grid;

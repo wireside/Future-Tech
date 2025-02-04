@@ -2,9 +2,6 @@
 
 .hero {
   &__main {
-    // delete this root later!
-    margin-bottom: rem(100); // for disable sticky effect on two sections
-    
     @include tablet-above {
       display: grid;
       grid-template-columns: 60% auto;
