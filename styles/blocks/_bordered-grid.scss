@@ -19,29 +19,39 @@
       --itemPaddingX: #{rem(40)};
     }
     
-    .bordered-grid__item {
-      /*
-        Elements in first and second cols
-      */
-      &:nth-child(3n - 2),
-      &:nth-child(3n - 1) {
-        padding-right: var(--itemPaddingX);
-        border-right: var(--border);
+    @include tablet-above {
+      .bordered-grid__item {
+        /*
+          Elements in first and second cols
+        */
+        &:nth-child(3n - 2),
+        &:nth-child(3n - 1) {
+          padding-right: var(--itemPaddingX);
+          border-right: var(--border);
+        }
+        
+        /*
+          Elements in second col
+        */
+        &:nth-child(3n - 1) {
+          @include full-vw-centered-line(bottom);
+        }
+        
+        /*
+          Elements in second and third cols
+        */
+        &:nth-child(3n - 1),
+        &:nth-child(3n) {
+          padding-left: var(--itemPaddingX);
+        }
       }
+    }
+    
+    @include tablet {
+      --columns: 1;
       
-      /*
-        Elements in second col
-      */
-      &:nth-child(3n - 1) {
-        @include full-vw-centered-line(bottom);
-      }
-      
-      /*
-        Elements in second and third cols
-      */
-      &:nth-child(3n - 1),
-      &:nth-child(3n) {
-        padding-left: var(--itemPaddingX);
+      .bordered-grid__item:not(:last-child) {
+        border-bottom: var(--border);
       }
     }
   }
