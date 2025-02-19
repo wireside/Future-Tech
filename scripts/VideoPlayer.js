@@ -17,6 +17,23 @@ class VideoPlayer {
     this.videoElement = this.rootElement.querySelector(this.selectors.video)
     this.panelElement = this.rootElement.querySelector(this.selectors.panel)
     this.playButtonElement = this.rootElement.querySelector(this.selectors.playButton)
+    this.bindEvents()
+  }
+  
+  onPlayButtonClick = () => {
+    this.videoElement.play()
+    this.videoElement.controls = true
+    this.panelElement.classList.remove(this.stateClasses.isActive)
+  }
+  
+  onVideoPause = () => {
+    this.videoElement.controls = false
+    this.panelElement.classList.add(this.stateClasses.isActive)
+  }
+  
+  bindEvents() {
+    this.playButtonElement.addEventListener('click', this.onPlayButtonClick)
+    this.videoElement.addEventListener('pause', this.onVideoPause)
   }
 }
 
