@@ -57,8 +57,15 @@
   }
   
   &:not(:has(.news-card__summary)) {
-    .news-card__link {
-      min-width: fluid(277, 153);
+    .news-card {
+      &__link {
+        min-width: fluid(277, 153);
+      }
+      
+      &__title {
+        font-family: var(--font-family-base);
+        font-weight: 600;
+      }
     }
   }
   

@@ -1863,6 +1863,10 @@ button[aria-label]::before {
 .news-card:not(:has(.news-card__summary)) .news-card__link {
   min-width: clamp(9.5625rem, 7.5870098039rem + 8.1045751634vw, 17.3125rem);
 }
+.news-card:not(:has(.news-card__summary)) .news-card__title {
+  font-family: var(--font-family-base);
+  font-weight: 600;
+}
 .news-card__image {
   width: 100%;
   height: 13.875rem;
