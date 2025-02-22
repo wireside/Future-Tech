@@ -34,4 +34,9 @@
       }
     }
   }
+  
+  &__title,
+  &__subtitle {
+    @include fluid-text(80, 28);
+  }
 }

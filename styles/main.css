@@ -1831,6 +1831,9 @@ button[aria-label]::before {
     overflow: hidden !important;
   }
 }
+.hero-alt__title, .hero-alt__subtitle {
+  font-size: clamp(1.75rem, 0.9215686275rem + 3.3986928105vw, 5rem);
+}
 
 .summary--2-cols .summary__list {
   display: grid;
