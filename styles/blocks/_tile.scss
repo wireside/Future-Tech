@@ -9,4 +9,8 @@
   @include laptop {
     border-radius: rem(10);
   }
+  
+  &--small-indents {
+    padding: fluid(30, 20);
+  }
 }
