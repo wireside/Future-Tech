@@ -14,6 +14,16 @@
     font-size: rem(16);
   }
   
+  &__body {
+    display: flex;
+    column-gap: rem(16);
+    width: 100%;
+    
+    @include laptop {
+      column-gap: rem(12);
+    }
+  }
+  
   &__required-star {
     color: var(--color-red);
   }
@@ -33,8 +43,36 @@
       border-radius: rem(6);
     }
     
+    @include hover {
+      box-shadow: var(--shadow);
+    }
+    
+    &:focus-visible {
+      outline: none;
+      border-color: var(--color-accent);
+    }
+    
     &::placeholder {
       color: var(--color-dark-40);
     }
+  }
+  
+  textarea.field__control {
+    resize: vertical;
+    min-height: rem(163);
+    padding-block: rem(20);
+    
+    @include laptop {
+      padding-block: rem(16);
+    }
+    
+    @include mobile {
+      min-height: rem(127);
+    }
+  }
+  
+  &__label,
+  &__control {
+    letter-spacing: 0;
   }
 }
