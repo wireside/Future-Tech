@@ -2,13 +2,15 @@
 
 .select {
   &__original-control {
+    min-width: rem(100);
+    
     @include hover {
       border: rem(1) solid var(--color-accent);
       box-shadow: none;
     }
     
     @include mobile-above {
-      //@include visually-hidden;
+      @include visually-hidden;
     }
   }
   
