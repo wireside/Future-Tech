@@ -1,0 +1,20 @@
+{
+  feedbacks: [
+    {
+      id: '1',
+      first_name: 'Ivan',
+      last_name: 'Ivanov',
+      mail: 'exmple@ex.rx',
+      message: '...',
+      phone_number: '+79999999900'
+    },
+    {
+      id: '4be6',
+      first_name: 'Иван',
+      last_name: 'Иванов',
+      mail: 'danildanilov@outlook.com',
+      message: "Hi, i'm gay!!!",
+      phone_number: '+15785435436'
+    },
+  ]
+}

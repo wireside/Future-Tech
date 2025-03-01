@@ -203,12 +203,14 @@
                 </div>
               </div>
               <div class="card__body">
-                <form class="feedback-form" action="/" method="post">
+                <form class="feedback-form" method="post" data-js-contacts-form>
                   <div class="feedback-form__cell field">
                     <label for="firstName" class="field__label">First Name <span class="field__required-star" aria-hidden="true">*</span></label>
                     <input
                       class="field__control"
                       id="firstName"
+                      name="first_name"
+                      type="text"
                       placeholder="Andrey"
                       required
                     >
@@ -218,6 +220,7 @@
                     <input
                       class="field__control"
                       id="lastName"
+                      name="last_name"
                       placeholder="Shiryaev"
                     >
                   </div>
@@ -226,6 +229,7 @@
                     <input
                       class="field__control"
                       id="email"
+                      name="mail"
                       placeholder="example@email.com"
                       required
                       type="email"
@@ -247,6 +251,7 @@
                           id="phoneNumberPrefix"
                           tabindex="-1"
                           data-js-select-original-control
+                          data-js-contacts-form-phone-number-prefix-select
                         >
                           <option value="+7" selected>+7</option>
                           <option value="+1">+1</option>
@@ -317,6 +322,7 @@
                         id="phoneNumber"
                         placeholder="(999) 999-99-99"
                         data-js-input-mask="(000) 000-00-00"
+                        data-js-contacts-form-phone-number-control
                       >
                     </div>
                   </div>
@@ -325,6 +331,7 @@
                     <textarea
                       class="field__control"
                       id="message"
+                      name="message"
                       placeholder="Hello! I have an idea..."
                       required
                     ></textarea>
@@ -344,6 +351,7 @@
                       <button
                         class="feedback-form__submit-button button button--accent"
                         type="submit"
+                        data-js-contacts-form-button
                       >
                         Send
                       </button>

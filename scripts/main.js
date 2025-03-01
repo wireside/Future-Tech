@@ -1,3 +1,5 @@
+import ContactsFormCollection from "./ContactsForm.js";
+import ContactsForm from "./ContactsForm.js";
 import Header from './Header.js'
 import TabsCollection from "./Tabs.js";
 import VideoPlayerCollection from "./VideoPlayer.js";
@@ -11,3 +13,4 @@ new VideoPlayerCollection()
 new ExpandableContentCollection()
 new InputMaskCollection()
 new SelectCollection()
+new ContactsFormCollection()

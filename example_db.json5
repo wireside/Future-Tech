@@ -1,0 +1,12 @@
+{
+  feedbacks: [
+    {
+      id: '1',
+      first_name: 'Ivan',
+      last_name: 'Ivanov',
+      mail: 'exmple@ex.rx',
+      message: '...',
+      phone_number: '+79999999900'
+    },
+  ]
+}
